@@ -14,7 +14,7 @@ with open('requirements_api.txt', 'r', encoding='utf-8') as f:
     requirements_api = f.read().split('\n')
 
 setup(
-    name='Pandora-ChatGPT',
+    name='Sdos-ChatGPT',
     version=__version__,
     python_requires='>=3.7',
     author='Neo Peng',
@@ -23,14 +23,14 @@ setup(
     description='A command-line interface to ChatGPT',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/pengzhile/pandora',
+    url='https://github.com/limkz27/pandora',
     packages=find_packages('src'),
     package_dir={'pandora': 'src/pandora'},
     include_package_data=True,
     install_requires=requirements,
     extras_require={
         'api': requirements_api,
-        'cloud': ['pandora-cloud~=0.4.9'],
+        'cloud': ['sdos-cloud~=0.4.9'],
     },
     entry_points={
         'console_scripts': [
@@ -39,8 +39,8 @@ setup(
         ]
     },
     project_urls={
-        'Source': 'https://github.com/pengzhile/pandora',
-        'Tracker': 'https://github.com/pengzhile/pandora/issues',
+        'Source': 'https://github.com/limkz27/pandora',
+        'Tracker': 'https://github.com/limkz27/pandora/issues',
     },
     classifiers=[
         'Development Status :: 5 - Production/Stable',
